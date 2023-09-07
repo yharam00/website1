@@ -13,18 +13,63 @@
     <title>나이트런 - 줄거리</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="main.css">
+    <style>
+        body {
+            margin: 0px;
+        }
+        a {
+            color:blue;
+            text-decoration: none;
+        }
+        h1 {
+            font-size: 45px;
+            text-align: center;
+            border-bottom: 2px solid gray;
+            padding: 20px;
+            margin: 0px;
+        }
+        #grid ol {
+            border-right: 2px solid gray;
+            padding: 20px;
+            padding-left: 30px;
+            margin: 0px;
+
+        }
+        li {
+            font-size: 20px;
+        }
+        #grid {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+        #text {
+            padding: 20px;
+        }
+        @media(max-width:650px){
+            #grid {
+            display: block;
+        }
+            #grid ol {
+            border-right: none;
+        }
+    }
+    </style>
 </head>
 <body>
     <div class="top-box" id="top-box">7층위키</div> 
     <h1><a href="index.html">7층의 나이트런 이야기</a></h1>
-    <ol>
-        <li><a href="1.html">개요</a></li>
-        <li><a href="2.html">줄거리</a></li>
-        <li><a href="3.html">특징</a></li>
-    </ol>
-    <h2>2. 줄거리</h2>
-    <p>우주력 430년. 성간이동이 가능해져 별과 별을 이동하는 시대. <br>
-        인간은 괴수와 싸우고 있다. 기사와 함께. 광활한 우주를 배경으로 판타지 SF가 다가온다. <br>
-        — 네이버 웹툰 소개</p>
+    <div id="grid">
+        <ol>
+            <li><a href="1.html">개요</a></li>
+            <li><a href="2.html" style="color:black; text-decoration:underline;">줄거리</a></li>
+            <li><a href="3.html">특징</a></li>
+        </ol>
+        <div id="text">
+            <h2 style="margin-top: 0px;">2. 줄거리</h2>
+            <p>우주력 430년. 성간이동이 가능해져 별과 별을 이동하는 시대. <br>
+                인간은 괴수와 싸우고 있다. 기사와 함께. 광활한 우주를 배경으로 판타지 SF가 다가온다. <br>
+                — 네이버 웹툰 소개</p>
+        </div>
+    </div>
 </body>
 </html>
